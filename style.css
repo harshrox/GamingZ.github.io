@@ -1,0 +1,296 @@
+body{
+    background-image: url('rdr2_1.jpg');
+    background-size: cover;
+    
+}
+.navbar{
+    
+    height: 80px;
+}
+
+.left{
+    
+    height: 50px;
+    width: 5%;
+    display: inline-block;
+    
+
+}
+.mid{
+    border: 2px solid black;
+    background-color: black;
+    height: 23%;
+    width: 64%;
+    display: inline-block;
+    border-radius: 13px;
+    box-shadow: 1px 2px 4px rgb(62, 60, 60);
+    position: relative;
+    left: 9.5%;
+    top: -6px;
+    
+}
+
+
+
+
+.logo{
+    box-shadow: 1px 2px 4px rgb(62, 60, 60);
+    border-radius: 50%;
+    height: 50px;
+    width: 75px; 
+       
+    position: relative;
+    top: 7px;
+    left: 22%;
+}
+
+
+.mid li{
+    
+    float: left;
+    list-style: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    bottom: 16px;
+
+}
+.mid li a{
+    color: white;
+    text-decoration: none;
+}
+.mid li a:hover{
+    color: red;
+}
+
+.right{
+    
+    height: 40px;
+    width: 15%;
+    
+    position: relative;
+    top: 29%;
+    right: 0.3%;
+    float: right;
+    
+    
+}
+
+#search{
+    color: white;
+    border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    box-shadow: 1px 1px 4px rgb(62, 60, 60);
+    border-right: 1px solid black;
+    width: 70%;
+    
+    background-color: black;
+    float: left;
+   
+}
+
+#submit{
+
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+    box-shadow: 1px 1px 4px rgb(62, 60, 60);
+    border-left: 1.3px solid rgb(173, 170, 170);
+    
+    width: 21.2px;
+    position: relative;
+    
+    
+    
+    
+      
+}
+
+input::placeholder{
+    color: white;
+}
+input:focus::placeholder {
+    color:red;
+}
+.content{
+    
+    color: black;
+    text-align: center;
+    font-size: 100px;
+    cursor:default ;
+    
+}
+.games{
+    
+    display: inline-block;
+    width: 100%;
+    height: 281px;
+}
+.details{
+    
+    display: inline-block;
+    margin-top: 5%;
+    width: 20%;
+    
+    
+    
+    
+}
+#detail1{
+    float: left;
+    margin-left: 15%;
+
+    
+}
+#detail2{
+    float: left;
+    margin-left: 6%;
+    
+
+}
+#detail3{
+    float: left;
+    margin-left: 6%;
+}
+
+
+.details summary{
+    
+    
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 1px 0px rgb(62, 60, 60);
+    
+    
+}
+.details summary:hover{
+    color: rgb(44, 37, 37);
+    
+}
+#detail1 ul{
+    background-image: url(open2.gif);
+    
+    background-size:131%;
+    background-position-x: 3%;
+    background-position-y:32%;
+    
+    
+}
+#detail2 ul{
+    background-image: url(race2.gif);
+    background-size: 117%;
+    background-position-x: 32%;
+    background-position-y:48%;
+}
+#detail3 ul{
+    background-image: url(shoot.gif);
+    background-size: 117%;
+    background-position-x: 32%;
+    background-position-y:48%;
+    
+}
+
+.details ul{
+    
+    margin-top: -1.4%;
+    border-radius: 14px;
+    box-shadow: 1px 2px 4px rgb(62, 60, 60);
+}
+.details li:hover{
+    color: red;
+    
+}
+.details li{
+
+    
+    list-style:square;
+    font-size: 20px;
+    margin: 5px;
+    color: white;
+   
+}
+
+.details li a{
+    
+    
+    color: white;
+    text-decoration: none;
+}
+.details li a:hover{
+    color:red;
+    cursor: pointer;
+}
+.sHover{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:sans-serif;
+    text-align:center;
+    border-bottom: 2px solid black; 
+    border-radius: 30%;
+    padding-bottom: 3% ;
+    cursor:default;
+    
+}
+
+.sHover:hover+.dHover,.dHover:hover {
+    display: block;
+    
+}
+
+.dHover{
+    display: none;
+}
+#info{
+    height: 20px;
+    width: 1.2%;
+    background-color: black;
+    
+    
+    
+    text-align: center;
+    color: white;
+    float: left;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    
+    
+    transition-property:color,height,width,background;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.18, 0.66, 1, 1);
+
+    
+    
+}
+
+#info:hover {
+    color: rgb(255, 255, 255);
+    height: 20px;
+    width:99.99%;
+    
+    background-color: black;  
+    cursor: default; 
+    
+   
+}
+#info::after{
+    content: "i";
+    
+}
+#info:hover::after{
+    
+    content: "GamingZ © 2022";
+    
+    animation:fade 2s;
+}
+@keyframes fade {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
