@@ -61,7 +61,9 @@ body{
 }
 .mid li a:hover{
     color: red;
+    text-decoration: underline;
 }
+
 
 .right{
     
@@ -244,8 +246,8 @@ input:focus::placeholder {
     display: none;
 }
 #info{
-    height: 20px;
-    width: 1.7%;
+    height: 67px;
+    width: 50%;
     
     
     
@@ -271,24 +273,73 @@ input:focus::placeholder {
     
     color: rgb(255, 255, 255);
     height: 67px;
-    width:99.99%;
+    width:100%;
+    overflow: hidden;
+    background-color: black;  
+    cursor: default; 
     
+    
+   
+}
+
+#info:hover::after{
+    
+    content: url('bottom1.png');
+    position: relative;
+    
+    
+    
+    animation:fade 5s;
+}
+
+#creator{
+    height: 67px;
+    width: 50%;
+    
+    
+   
+    
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    
+    
+    transition-property:color,height,width,background;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+
+    
+    
+}
+
+#creator:hover {
+    
+    color: rgb(255, 255, 255);
+    height: 67px;
+    width: 100%;
+    overflow: hidden;
     background-color: black;  
     cursor: default; 
     
    
 }
-#info::after{
+
+
+#creator:hover::after{
     
-    content: "info";
+    content: url('bottom3.png');
+    position: relative;
     
-}
-#info:hover::after{
     
-    content: url('bottom1.png');
     
     animation:fade 5s;
 }
+
+
 @keyframes fade {
     from {
         opacity:0;
