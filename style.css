@@ -63,7 +63,9 @@ body{
     color: red;
     text-decoration: underline;
 }
-
+#index{
+    border: 0.5px solid white;
+}
 
 .right{
     
