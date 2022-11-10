@@ -61,7 +61,6 @@ body{
 }
 .mid li a:hover{
     color: rgb(209, 196, 196);
-    border-bottom: 2px solid rgb(209, 196, 196);
     
 }
 
@@ -71,7 +70,9 @@ body{
     padding-left: 2px;
     padding-right: 2px;
 }
-
+.links:hover{
+    border-bottom: 2px solid rgb(209, 196, 196);
+}
 .right{
     
     height: 40px;
@@ -91,7 +92,7 @@ body{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     
-    box-shadow: 1px 1px 4px rgb(62, 60, 60);
+    box-shadow: 1px 2px 4px rgb(62, 60, 60);
     border-right: 1px solid black;
     width: 70%;
     
@@ -104,7 +105,7 @@ body{
 
     border-top-right-radius: 48px;
     border-bottom-right-radius: 48px;
-    box-shadow: 1px 1px 4px rgb(62, 60, 60);
+    box-shadow: 1px 2px 4px rgb(62, 60, 60);
     border-left: 1.3px solid rgb(173, 170, 170);
     
     width: 21.2px;
@@ -122,136 +123,126 @@ input::placeholder{
 input:focus::placeholder {
     color:rgb(209, 196, 196);
 }
-.content{
-    
-    color: black;
-    text-align: center;
-    font-size: 100px;
-    cursor:default ;
-    
-}
-.games{
-    
+
+#login{
     display: inline-block;
-    width: 100%;
-    height: 281px;
-}
-.details{
-    
-    display: inline-block;
-    margin-top: 5%;
-    width: 20%;
-    
-    
-    
-    
-}
-#detail1{
-    float: left;
+    height: 400px;
+    width: 70%;
     margin-left: 15%;
-
+    margin-top: 6%;
     
 }
-#detail2{
+#oldusers{
+    
     float: left;
-    margin-left: 6%;
+    height: 400px;
+    width: 49%;
     
-
-}
-#detail3{
-    float: left;
-    margin-left: 6%;
-}
-
-
-.details summary{
-    
-    
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    cursor: pointer;
-    box-shadow: 0px 1px 0px rgb(62, 60, 60);
-    
-    
-}
-.details summary:hover{
-    color: rgb(44, 37, 37);
-    
-}
-#detail1 ul{
-    background-image: url(open2.gif);
-    
-    background-size:131%;
-    background-position-x: 3%;
-    background-position-y:32%;
-    
-    
-}
-#detail2 ul{
-    background-image: url(race2.gif);
-    background-size: 117%;
-    background-position-x: 32%;
-    background-position-y:48%;
-}
-#detail3 ul{
-    background-image: url(shoot.gif);
-    background-size: 117%;
-    background-position-x: 32%;
-    background-position-y:48%;
     
 }
 
-.details ul{
+#newusers{
     
-    margin-top: -1.4%;
-    border-radius: 14px;
+    float: right;
+    height: 400px;
+    width:49%;
+    
+    
+}
+.logintext{
+    
+    
+    
+    height: 66px;
+    
+    text-align: center;
+    font-size: 50px;
+    cursor: default;
+
+}
+.logintext hr{
+    width: 70%;
+    margin-top: 2%;
+    border: 1px solid black;
+    background-color: black;
+}
+.loginform{
+    
+    height: 328px;
+    
+}
+
+.loginform input{
+    height: 19px;
+    width: 48%;
+    margin-left: 26%;
+    margin-top: 4%;
+    color: white;
+    background-color: rgb(46, 45, 45);
     box-shadow: 1px 2px 4px rgb(62, 60, 60);
-}
-.details li:hover{
-    color: red;
+    border-radius: 10px;
+    border-color: black;
     
+ 
 }
-.details li{
-
-    
-    list-style:square;
-    font-size: 20px;
-    margin: 5px;
+.loginform::placeholder{
     color: white;
-   
+}
+.loginform a{
+    margin-left: 26.2%;
+    color: black;
+    
+}
+.loginform a:hover{
+    color: rgb(39, 36, 36);
 }
 
-.details li a{
-    
-    
-    color: white;
-    text-decoration: none;
-}
-.details li a:hover{
-    color:red;
+.LogSubmit{
+    height: 28px;
+    width: 48.4%;
+    margin-top: 4%;
+    margin-left: 26.4%;
+    background-color: black;
+    box-shadow: 1px 2px 4px rgb(62, 60, 60);
     cursor: pointer;
-}
-.sHover{
-    font-size: 25px;
-    font-weight: bold;
-    font-family:sans-serif;
-    text-align:center;
-    border-bottom: 2px solid black; 
-    border-radius: 30%;
-    padding-bottom: 3% ;
-    cursor:default;
+    
     
 }
 
-.sHover:hover+.dHover,.dHover:hover {
-    display: block;
-    
+.LogSubmit:hover{
+    background-color: rgb(39, 36, 36);
+}
+.LogSubmit span{
+    font-size: 20px;
+    color: white;
+
 }
 
-.dHover{
-    display: none;
+#forgotbelow{
+    margin-top: 2%;
+    
+
 }
+#forgotbelow:focus{
+    animation: shake 0.3s;
+}
+#signup:focus{
+    animation: shake 0.3s;
+}
+@keyframes shake{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+
+
+
 #info{
     height: 67px;
     width: 50%;
