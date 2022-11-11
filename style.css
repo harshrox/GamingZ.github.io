@@ -88,10 +88,10 @@ body{
 #search{
     color: white;
     border: 2px solid black;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px;
     
-    box-shadow: 1px 1px 4px rgb(62, 60, 60);
+    padding-right: 10%;
+    box-shadow: 1px 2px 4px rgb(62, 60, 60);
     border-right: 1px solid black;
     width: 70%;
     
@@ -102,14 +102,12 @@ body{
 
 #submit{
 
-    border-top-right-radius: 48px;
-    border-bottom-right-radius: 48px;
-    box-shadow: 1px 1px 4px rgb(62, 60, 60);
-    border-left: 1.3px solid rgb(173, 170, 170);
+    
+    filter: invert();
     
     width: 21.2px;
     position: relative;
-    
+    transform: translateX(-23px) translateY(1px);
     
     
     
