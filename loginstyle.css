@@ -250,8 +250,8 @@ input:focus::placeholder {
 .userimg{
     display: block;
     filter: invert();
-    transform: translateX(3px) translateY(25px);
-    
+    transform: translateX(4px) translateY(23.4px);
+    width: 21.1px;
     
    
 }
