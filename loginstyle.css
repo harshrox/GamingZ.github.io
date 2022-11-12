@@ -175,7 +175,7 @@ input:focus::placeholder {
     height: 19px;
     width: 48%;
     align-items: center;
-    padding-left: 27px;
+    padding-left: 4.8%;
     color: white;
     background-color: black;
     box-shadow: 1px 2px 4px rgb(62, 60, 60);
@@ -186,6 +186,7 @@ input:focus::placeholder {
 }
 .loginform::placeholder{
     color: white;
+    
 }
 .loginform a{
     margin-left: 23.2%;
@@ -198,7 +199,7 @@ input:focus::placeholder {
 
 .LogSubmit{
     height: 28px;
-    width: 53.4%;
+    width: 52.9%;
     margin-top: 4%;
     margin-left: 23.4%;
     background-color: black;
