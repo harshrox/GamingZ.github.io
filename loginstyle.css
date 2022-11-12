@@ -174,7 +174,6 @@ input:focus::placeholder {
     display: block;
     height: 19px;
     width: 48%;
-    align-items: center;
     padding-left: 4.8%;
     color: white;
     background-color: black;
@@ -244,19 +243,22 @@ input:focus::placeholder {
 .loginform input::placeholder{
     transform: translateY(1px);
     font-size: 14px;
+    
 }
 
 
 .userimg{
     display: block;
     filter: invert();
-    transform: translateX(4px) translateY(23.4px);
+    transform: translateX(4px) translateY(26.5px);
     width: 21.1px;
     
    
 }
 .leftmargin{
     margin-left: 23%;
+    margin-top: 0.5%;
+    
 }
 
 
